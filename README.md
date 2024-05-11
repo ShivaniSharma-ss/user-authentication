@@ -97,6 +97,21 @@ newDetails (object): Object containing the updated user details.
 
 
 
+## Swagger API Playground:
 
+### Description:
+The API is documented using Swagger, providing an interactive playground for testing the API endpoints. Swagger allows users to explore and interact with the API in a user-friendly interface, making it easier to understand the available endpoints, their request parameters, and response formats.
+
+### Accessing the API Playground:
+To access the API playground, navigate to the following URL in your web browser:
+###  http://localhost:8080/api-docs/
+
+## Using the API Playground:
+Once you access the URL, you will be presented with the Swagger documentation page. \
+Here, you can view a list of available API endpoints along with their descriptions. \
+Click on any endpoint to view detailed information such as request parameters, request body schema, response schema, etc. \
+You can also try out each endpoint interactively by clicking on the "Try it out" button. \
+Enter the required parameters or request body data and click on "Execute" to send the request. \
+The response will be displayed below, showing the status code, response body, and any relevant information.
 
 
