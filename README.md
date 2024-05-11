@@ -9,16 +9,16 @@ This endpoint allows users to register by providing their information including 
 name (string): The name of the user. \
 email (string): The email address of the user. \
 phone (string): The phone number of the user. \
-password (string): The password for the user account.
-photo (string): URL or base64 encoded image of the user's photo.
-bio (string): A short biography or description of the user.
-isPublicProfile (boolean): Indicates whether the user's profile is public or private.
-isAdmin (boolean): Indicates whether the user has administrative privileges.
+password (string): The password for the user account. \
+photo (string): URL or base64 encoded image of the user's photo. \
+bio (string): A short biography or description of the user. \
+isPublicProfile (boolean): Indicates whether the user's profile is public or private. \
+isAdmin (boolean): Indicates whether the user has administrative privileges. \
 
 ### Response:
-200 OK: Successful registration.
-success (boolean): true.
-message (string): "User has been registered successfully".
+200 OK: Successful registration. \
+success (boolean): true. \
+message (string): "User has been registered successfully". \
 
 ## POST /api/login
 
@@ -27,14 +27,14 @@ message (string): "User has been registered successfully".
 This endpoint facilitates user login by verifying the provided credentials. Upon successful authentication, it generates a JSON Web Token (JWT) containing user information and returns it to the client for subsequent authenticated requests.
 
 ### Request Body:
-email (string): The email address of the user.
-password (string): The password for the user account.
+email (string): The email address of the user. \
+password (string): The password for the user account. \
 
 ### Response:
-200 OK: Successful login.
-success (boolean): true.
-message (string): "User has been successfully logged in".
-token (string): JWT containing user information.
+200 OK: Successful login. \
+success (boolean): true. \
+message (string): "User has been successfully logged in". \
+token (string): JWT containing user information. \
 
 ## GET /api/getUserDetails
 
@@ -45,16 +45,16 @@ This endpoint retrieves details of a user based on the provided email address. A
 email (string): The email address of the user whose details are to be retrieved.
 
 ### Response:
-200 OK: Successful retrieval.
-success (boolean): true.
-userDetails (object): Object containing user details.
-404 Not Found: If user with the provided email address is not found.
-success (boolean): false.
-message (string): "User Not Found".
-500 Internal Server Error: If an internal server error occurs.
-success (boolean): false.
-message (string): "Internal Server Error".
-error (object): Details of the error.
+200 OK: Successful retrieval. \
+success (boolean): true. \
+userDetails (object): Object containing user details. \
+404 Not Found: If user with the provided email address is not found. \
+success (boolean): false. \
+message (string): "User Not Found". \
+500 Internal Server Error: If an internal server error occurs. \
+success (boolean): false. \
+message (string): "Internal Server Error". \
+error (object): Details of the error. \
 
 ## GET /api/getAllUsers
 
@@ -65,12 +65,12 @@ This endpoint retrieves details of all users. Authentication is required to acce
 email (string): The email address of the user making the request.
 
 ### Response:
-200 OK: Successful retrieval.
-success (boolean): true.
-users (array): Array containing user details.
-404 Not Found: If the provided email address is not associated with any user.
-success (boolean): false.
-message (string): "Wrong email provided".
+200 OK: Successful retrieval. \
+success (boolean): true. \
+users (array): Array containing user details. \
+404 Not Found: If the provided email address is not associated with any user. \
+success (boolean): false.  \
+message (string): "Wrong email provided". \
 
 ## PUT /api/updateUserDetails/:email
 
@@ -81,19 +81,19 @@ This endpoint allows a user to update their details. Authentication is required 
 email (string): The email address of the user whose details are to be updated.
 
 ### Request Body:
-name (string): The updated name of the user.
-email (string): The updated email address of the user.
-phone (string): The updated phone number of the user.
-password (string): The updated password for the user account, encoded in base64.
-photo (string): The updated URL or base64 encoded image of the user's photo.
-bio (string): The updated biography or description of the user.
-isPublicProfile (boolean): The updated status indicating whether the user's profile is public or private.
+name (string): The updated name of the user. \
+email (string): The updated email address of the user. \
+phone (string): The updated phone number of the user. \
+password (string): The updated password for the user account, encoded in base64. \
+photo (string): The updated URL or base64 encoded image of the user's photo. \
+bio (string): The updated biography or description of the user. \
+isPublicProfile (boolean): The updated status indicating whether the user's profile is public or private. \
 
 ### Response:
-200 OK: Successful update.
-success (boolean): true.
-message (string): "User details updated successfully".
-newDetails (object): Object containing the updated user details.
+200 OK: Successful update. \
+success (boolean): true. \
+message (string): "User details updated successfully". \
+newDetails (object): Object containing the updated user details. \
 
 
 
