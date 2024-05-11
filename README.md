@@ -1,5 +1,8 @@
 # Steps to use the api
 
+Use  localhost:8080 with the appropriate host and port if your server is running on a different address.
+For Ex: http://localhost:8080/api/register
+
 ## POST /api/register
 
 ### Description:
